@@ -4,7 +4,7 @@ A GLSL Content Processor for MonoGame(needs MonoGame.GLSLLibrary to use compiled
 ## Usage
 Add the Compiler assembly to your Content Project(.mgcb file)
 ```
-\#-------------------------------- References --------------------------------\#
+#-------------------------------- References --------------------------------#
 
 /reference:../../tools/GLSLCompiler.dll
 ```
