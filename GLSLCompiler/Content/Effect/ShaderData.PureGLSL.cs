@@ -95,7 +95,7 @@ namespace GLSLCompiler.Content.Effect
 			closingBracket = calcAbsoluteIndex (closingBracket, commentPositions);
 			//throw new Exception (glsl.Length+"lbla:"+closingBracket);
 
-			glsl = glsl.Insert (closingBracket - 1, "\n\tgl_Position.y = gl_Position.y * posFixup.y;\n\tgl_Position.xy += posFixup.zw * gl_Position.ww;");
+			glsl = glsl.Insert (closingBracket - 1, "\n\tgl_Position.y = gl_Position.y * posFixup.y;\n\tgl_Position.xy += posFixup.zw * gl_Position.ww;\n\tgl_Position.z = gl_Position.z * 2.0 - gl_Position.w;");
 
 			//(glsl);
 			int methodHeadStart = calcAbsoluteIndex (methodHead.Index, commentPositions);
